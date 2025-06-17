@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=/, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Docu</title>
+</head>
+<body>
+   <div class="container">
+        <h1>Guest List Manager</h1>
+        
+        <!-- Add Guest Form -->
+        <div class="input-section">
+            <input type="text" id="guestName" placeholder="Enter guest name">
+            <select id="guestCategory">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="colleague">Colleague</option>
+            </select>
+            <button id="addGuest">Add Guest</button>
+        </div>
+
+        <!-- Guest List -->
+        <ul id="guestList"></ul>
+
+        <!-- Statistics -->
+        <div class="stats">
+            <p id="guestCounter">Total: 0/10 | Attending: 0</p>
+            <p id="categoryCount">Friends: 0 | Family: 0 | Colleagues: 0</p>
+        </div>
+    </div>
+    <!-- JavaScript File -->
+    <script src ="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#guestName {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#guestCategory {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+}
+
+#addGuest {
+    padding: 12px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#addGuest:hover {
+    background: #2980b9;
+}
+
+#guestList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#guestList li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #3498db;
+    transition: transform 0.2s;
+}
+
+#guestList li:hover {
+    transform: translateY(-2px);
+}
+
+.guest-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.guest-name {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.guest-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+.guest-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.category-tag {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.friend {
+    background-color: #2ecc71;
+}
+
+.family {
+    background-color: #e74c3c;
+}
+
+.colleague {
+    background-color: #9b59b6;
+}
+
+.action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+
+.rsvp-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.rsvp-btn.attending {
+    background-color: #2ecc71;
+}
+
+.edit-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.stats {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stats p {
+    margin: 0;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+.empty-list {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* Edit mode styles */
+.edit-mode {
+    background-color: #fffde7;
+}
+
+.edit-input {
+    padding: 8px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
